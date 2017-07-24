@@ -1,11 +1,15 @@
-#ifndefine _BIBLIOTHEQUE_C_LISTE_CONTIGUE
+#ifndef _BIBLIOTHEQUE_C_LISTE_CONTIGUE_
+#define _BIBLIOTHEQUE_C_LISTE_CONTIGUE_
 
 
 
-#define 1_MOT
+#define UN_MOT
+#define TAILLE 8
 
 
 
+#include <stdio.h>
+#include <stdlib.h>
 
 
 
@@ -13,8 +17,9 @@ typedef int objet;
 
 
 
+#ifdef UN_MOT
 
-#if 1_MOT
+objet * AllocationListe(int);
 
 
 #endif
